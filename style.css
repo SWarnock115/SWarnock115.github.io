@@ -1,22 +1,9 @@
-.paraFirst{font-family:"Times New Roman", Times, serif;
-  font-weight: bold;
+.p1,.p3{
   color:green;
 }
-.paraSecond{font-family:"Times New Roman", Times, serif;
-color:orange;
+.p2,.p4{
+  color:blue;
 }
-.paraThird{font-family:"Times New Roman", Times, serif;
-color:purple;
-}
-#firstWord{vertical-align: super;
-color:red;
-}
-#secondWord{text-transform:uppercase;
-color:blue;
-font-style: italic;
-}
-.box{margin: 20px 10% 20px 10%;
-border: red 3px dashed;
-color: green;
-padding: 10px 20% 10px 20%;
+.div1 p{
+  color:purple;
 }
