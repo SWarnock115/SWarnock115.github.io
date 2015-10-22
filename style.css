@@ -4,6 +4,12 @@
 .p2,.p4{
   color:blue;
 }
+div{background-color:blue;
+width:100px;
+}
 .div1 p{
   color:purple;
+}
+.groupings{position: relative;
+color:orange;
 }
