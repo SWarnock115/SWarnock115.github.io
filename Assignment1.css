@@ -1,0 +1,61 @@
+body{
+	color:black;
+	background-color:black;
+}
+ h1, h2{
+	 text-transform: uppercase;
+ }
+ div h2{
+	 color:lightblue;
+ }
+
+#sizes{
+	font-size:25px;
+}
+
+#colors{
+	color:red;
+}
+
+#fonts{
+	font-family:"Times New Roman",Times, serif;
+}
+
+#uppercase{
+	text-transform: uppercase;
+}
+
+#wrapper{
+	width:750px;
+	margin:0 auto;
+	background-color:white;
+}
+
+#header{
+	height:50px;
+	text-align:center;
+
+}
+
+#leftbody{
+	float:left;
+	width:190px;
+	height: 500px;
+	background-color:lightgreen;
+	padding:5px;
+
+}
+#rightbody{
+	float:right;
+	width:540px;
+	height:500px;
+	background: green;
+	padding:5px;
+}
+
+#bottom{
+	text-align:center;
+	height:50px;
+	clear:both;
+
+}
