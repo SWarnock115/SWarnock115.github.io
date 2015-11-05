@@ -2,12 +2,25 @@ body{
 	color:black;
 	background-color:black;
 }
+
  h1, h2{
 	 text-transform: uppercase;
  }
  div h2{
 	 color:lightblue;
  }
+
+ #absolute{
+ 	position: absolute;
+ 	right:800px;
+ 	top:400px;
+ }
+
+ #relative{
+	 position: relative;
+	 left:25px;
+ }
+
 
 #sizes{
 	font-size:25px;
@@ -32,8 +45,14 @@ body{
 }
 
 #header{
-	height:50px;
+	position:fixed;
+	width:500px;
+  height:100px;
+  background:red;
+	left:50px;
+	top:1px;
 	text-align:center;
+	z-index: auto;
 
 }
 
@@ -41,7 +60,7 @@ body{
 	float:left;
 	width:190px;
 	height: 500px;
-	background-color:green;
+	background-color:lightgreen;
 	padding:5px;
 
 }
@@ -54,8 +73,9 @@ body{
 }
 
 #bottom{
-	text-align:center;
-	height:50px;
+	background-color:darkblue;
+	color:pink;
+	height:auto;
 	clear:both;
 
 }
