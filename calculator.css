@@ -1,0 +1,30 @@
+body{
+color: black;
+background-color:#B6B6B4;
+text-align:center;
+
+}
+#title{
+position: absolute;
+top:30px;
+color: black;
+text-align: left;
+font-weight: bold;
+text-decoration: underline;
+
+}
+#instructions {
+  position: absolute;
+  top: 50px;;
+  color: black;
+  text-align: left;
+  width: 500px;
+  border: 1px solid black;
+}
+#credits{
+  font-size: 12px;
+  border-top: solid black;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+}
