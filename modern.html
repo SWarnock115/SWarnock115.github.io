@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Magic for Beginners</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="exam.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="exam.js"></script>
+</head>
+<body onload="startTime()">
+<!-- Thanks to W3School, Webmasterworlds, Wikipedia, MTG Salvation,WOTC-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">Magic for Beginners</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Standard <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="standard.html">Info</a></li>
+            <li><a href="standard.html#tier1">Tier 1</a></li>
+            <li><a href="standard.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Modern <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="modern.html">Info</a></li>
+            <li><a href="modern.html#tier1">Tier 1</a></li>
+            <li><a href="modern.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Legacy <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="legacy.html">Info</a></li>
+            <li><a href="legacy.html#tier1">Tier 1</a></li>
+            <li><a href="legacy.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="header">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg" alt="picture of a magic card" style="width:128px;height:128px;">
+<h1 id="title">Magic for Beginners</h1>
+<p id="phrase">Information for the new MTG Player. Learn about the formats and the decks for each them.</p>
+<div id="date"></div>
+<button type="button" id="button1" onclick="red()">Red</button>
+<button type="button" id="button2" onclick="blue()">Blue</button>
+<button type="button" id="button3" onclick="black()">Black</button>
+<button type="button" id="button4" onclick="green()">Green</button>
+<button type="button" id="button5" onclick="white()">White</button>
+<button type="button" id="button6" onclick="reset()">Default</button>
+</div>
+<div id="content">
+<h1 id="info"> Modern</h1>
+<p>Modern is a constructed format and therefore adheres to the following constructed rules:
+<ul>
+<li>Minimum of sixty cards.</li>
+<li>No maximum deck size, as long as you can shuffle your deck unassisted.</li>
+<li>Up to fifteen cards in your sideboard, if used.</li>
+</ul>
+With the exception of basic lands (Plains, Island, Swamp, Mountain, and Forest), your combined deck and sideboard may not contain more than four of any individual card, counted by its English card title equivalent.</p>
+<p>To see a list of permitted card sets and banned cards <a href="http://magic.wizards.com/en/gameinfo/gameplay/formats/modern">Click Here</a>.</p>
+<h1 id="tier1">Tier 1</h1>
+<p>The best of the best, these are the decks with some of the best tournament postings in recent months.</p>
+<a href="#tron" class="btn btn-info" data-toggle="collapse">Green/Red Tron</a><br />
+<br />
+  <div id="tron" class="collapse">
+    <h3>Info</h3>
+      <p>Tron is a (mainly) green deck that's goal is to assemble the Urzatron (Urza's Tower, Urza's Mine, and Urza's Power Plant) as quickly as possible. Once they have been assembled, the goal is to generate insurmountable advantage. The main route to this is Karn Liberated, who is the cornerstone to the deck (yes, just as much as the Tron lands themselves). Once Karn takes the field, it becomes difficult or impossible for opponents to retake the game. A T3 Karn is this deck's goal, and often seals the game on the spot. Other than Karn, this deck has perhaps the best inevitability in the format. When you're done assembling the Urzatron with your land search, you can search out Eye of Ugin which in turn searches out Emrakul, the Aeons Torn. Generally castable between turns 6 and 8, this single card makes sure that your opponents can never even hope to stall you out.</p>
+    <h3>Signature Cards<h3>
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/12/94/200/283/83316.full.jpg" alt="Urza Tower" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/12/92/200/283/83314.full.jpg" alt="Urza Mine" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/12/93/200/283/83315.full.jpg" alt="Urza Powerplant" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/531/200/283/397828.full.jpg" alt="Karn, The Liberated" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/763/200/283/402065.full.jpg" alt="Sylvan Scrying" style="width:200px;height:250px;">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Gx Tron is fast, consistent, and has one of the best lategame in all of Modern.</li>
+       <li>It has generally positive matchups against most decks.</li>
+        <li>It's a relatively simple deck to pick up, while still holding a lot of intricacies in terms of its card choices</li>
+    </ul>
+    <h3>Weaknesses</h3>
+    <ul>
+    <li>Has a hard time against fast decks such as Burn and Infect, which are relatively common.</li>
+     <li>If your opponent casts a Blood Moon, it is virtually unwinnable.</li>
+   </ul>
+  </div>
+  <a href="#burn" class="btn btn-info" data-toggle="collapse">Burn</a><br />
+  <br />
+    <div id="burn" class="collapse">
+    <h3>Info</h3>
+      <p>Burn is a deck that uses efficient creatures and Red instant and sorcery spells to deal direct damage to your opponent in an effort to end the game as quickly as possible using little to no disruption</p>
+    <h3>Signature Cards</h3>
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/540/200/283/397722.full.jpg" alt="Lightning Bolt" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/50/674/200/283/370409.full.jpg" alt="Lava Spike" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/16/260/200/283/170987.full.jpg" alt="Goblin Guide" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/298/200/283/394502.full.jpg" alt="Atarka's Command" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/118/200/283/386608.full.jpg" alt="Monastery Swiftspear" style="width:200px;height:250px;">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Incredibly fast, sometimes able to win on turn 3, usually turn 4.</li>
+      <li>Relatively cheap when compared to other decks.</li>
+       <li>Very easy to learn.</li>
+       <li>It does not have an unwinnable matchup.</li>
+     </ul>
+    <h3>Weaknesses</h3>
+    <ul>
+      <li>You have a set amount of damage you can deal per game, if your oppnent gains some life, which is very common, you may be unable to win. </li>
+    </ul>
+    </div>
+    <a href="#robots" class="btn btn-info" data-toggle="collapse">Affinity</a><br />
+    <br />
+      <div id="robots" class="collapse">
+        <h3>Info</h3>
+          <p>One of the few real aggro deck in the format with elements of combo and tempo. It combines low-costed creatures with evasion and highly efficient spells in the form of Thoughtcast and Galvanic Blast, and it is also highly resilient to removal and board wipes. The deck has numerous complex synergies that rewards strong pilots with faster clocks. Theoretically, the deck can win on as early as turn 2, although in reality it mostly wins on turn 4 or turn 5 with light disruption.</p>
+        <h3>Signature Cards</h3>
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/50/573/200/283/370510.full.jpg" alt="Arcbound Ravager" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/642/200/283/397804.full.jpg" alt="Thoughtcast" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/488/200/283/397710.full.jpg" alt="Etched Champion" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/17/596/200/283/208251.full.jpg" alt="Galvanic Blast" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/462/200/283/397869.full.jpg" alt="Cranial Plating" style="width:200px;height:250px;">
+        <h3>Strengths</h3>
+        <ul>
+          <li>Can win on turn 2, usually turn 3/4.</li>
+          <li>Can win through multiple means.</li>
+          <li>Pretty good matchups on the whole.</li>
+        </ul>
+        <h3>Weaknesses</h3>
+        <ul>
+          <li>Game 2 and 3, opponents can bring in cards that make winning quite difficult.</li>
+          <li>Requires more skill than expected.</li>
+          <li>Can run out of gas quite fast.</li>
+        </ul>
+      </div>
+      <a href="#twin" class="btn btn-info" data-toggle="collapse">Twin</a><br />
+      <br />
+        <div id="twin" class="collapse">
+      <h3>Info</h3>
+        <p> A combo deck that, more often then not, wins on turn 4.</p>
+      <h3>Signature Cards</h3>
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/16/991/200/283/193474.full.jpg" alt="Splinter Twin" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/53/946/200/283/376301.full.jpg" alt="Deciever Exarch" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/12/336/200/283/87919.full.jpg" alt="Remand" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/10/956/200/283/50145.full.jpg" alt="Serum Vision" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/19/105/200/283/227676.full.jpg" alt="Snapcaster Mage" style="width:200px;height:250px;">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Wins consistently on Turn 4.</li>
+        <li>If the combo doesn't work can win through other means.</li>
+         <li>Not many weaknesses.</li>
+         <li>Many different variants.</li>
+       </ul>
+      <h3>Weaknesses</h3>
+      <ul>
+        <li>Sometimes you can't find a wincon.</li>
+        <li>Many decks are now running more removal to deal with the combo.</li>
+      </ul>
+    </div>
+<h1 id="tier2">Tier 2</h1>
+<p>Might not be the best, but they do give Tier 1 a run for their money. These decks have good results and have good game against most of the Tier 1 decks.</p>
+<a href="#elves" class="btn btn-info" data-toggle="collapse">Collected Elves</a><br />
+<br />
+  <div id="elves" class="collapse">
+<h3>Info</h3>
+  <p>An aggro-based deck that wins off the speed in which it assembles an army of murderous elves.</p>
+<h3>Signature Cards</h3>
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/64/316/200/283/389511.full.jpg" alt="Ezuri,Renegade Leader" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/315/200/283/394519.full.jpg" alt="Collected Company" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/14/497/200/283/152556.full.jpg" alt="Heritage Druid" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/64/303/200/283/389498.full.jpg" alt="Elvish Archdruid" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/15/0/200/283/151095.full.jpg" alt="Nettle Sentinel" style="width:200px;height:250px;">
+<h3>Strengths</h3>
+<ul>
+  <li>Fast and consistent.</li>
+  <li>Cheap</li>
+</ul>
+<h3>Weaknesses</h3>
+<ul>
+  <li> Occassionaly, even if things come together you can still lose.</li>
+  <li> Board wipes are very effective against you.</li>
+</ul>
+</div>
+<a href="#fish" class="btn btn-info" data-toggle="collapse">Merfolk</a><br />
+<br />
+  <div id="fish" class="collapse">
+<h3>Info</h3>
+  <p>Merfolk is a blue-based aggro deck with tempo elements that is built around the synergistic elements available to the Merfolk creature type.  Merfolk is a mostly fair, highly linear, proactive deck that employs lots of cheap, efficient creatures along with Æther Vial and some catchall disruption in order to overwhelm its opponents.</p>
+<h3>Signature Cards</h3>
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/50/568/200/283/370514.full.jpg" alt="Aether Vial" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/13/290/200/283/106642.full.jpg" alt="Lord of Atlantis" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/19/804/200/283/279901.full.jpg" alt="Master of the Pearl Trident" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/53/576/200/283/373536.full.jpg" alt="Master of Waves" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/16/415/200/283/190405.full.jpg" alt="Spreading Seas" style="width:200px;height:250px;">
+<h3>Strengths</h3>
+<ul>
+  <li>Versatile</li>
+   <li>Resilient</li>
+   <li>Very few bad matchups.</li>
+ </ul>
+<h3>Weaknesses</h3>
+<ul>
+  <li> The bad matchups are gaining popularity</li>
+  <li>Can sometime get blown out by mass removal.</li>
+</ul>
+</div>
+<a href="#infect" class="btn btn-info" data-toggle="collapse">Infect</a><br />
+<br />
+  <div id="infect" class="collapse">
+<h3>Info</h3>
+  <p>Infect is an aggro-combo deck which utilizes the Infect mechanic to win the game quickly. The objective is to give the opponent 10 poison counters. Pump spells are central to the deck, and go hand in hand with Infect creatures.</p>
+<h3>Signature Cards</h3>
+  <img src="http://magiccards.info/scans/en/nph/111.jpg" alt="Glistener Elf" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/17/858/200/283/213731.full.jpg" alt="Inkmoth Nexus" style="width:200px;height:250px;">
+  <img src="http://magiccards.info/scans/en/zen/193.jpg" alt="Vines of Vastwood" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/16/617/200/283/193998.full.jpg" alt="Groundswell" style="width:200px;height:250px;">
+  <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/77/430/200/283/397768.full.jpg" alt="Apostle's Blessing" style="width:200px;height:250px;">
+<h3>Strengths</h3>
+<ul>
+  <li>Wins against most combo decks and control decks</li>
+  <li>Fast</li>
+</ul>
+<h3>Weaknesses</h3>
+<ul>
+  <li> Spot removal and blockers</li>
+</ul>
+</div>
+</div>
+<div id="bottom">
+<a href="modern.html#header">Go to Top</a>
+<p id="copyright">© 2015 Sydnee Warnock All Rights Reserved.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Magic for Beginners</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="exam.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="exam.js"></script>
+</head>
+<body onload="startTime()">
+<!-- Thanks to W3School, Webmasterworlds, Wikipedia, MTG Salvation,WOTC-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">Magic for Beginners</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Standard <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="standard.html">Info</a></li>
+            <li><a href="standard.html#tier1">Tier 1</a></li>
+            <li><a href="standard.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Modern <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="modern.html">Info</a></li>
+            <li><a href="modern.html#tier1">Tier 1</a></li>
+            <li><a href="modern.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Legacy <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="legacy.html">Info</a></li>
+            <li><a href="legacy.html#tier1">Tier 1</a></li>
+            <li><a href="legacy.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="header">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg" alt="picture of a magic card" style="width:128px;height:128px;">
+<h1 id="title">Magic for Beginners</h1>
+<p id="phrase">Information for the new MTG Player. Learn about the formats and the decks for each them.</p>
+<div id="date"></div>
+<button type="button" id="button1" onclick="red()">Red</button>
+<button type="button" id="button2" onclick="blue()">Blue</button>
+<button type="button" id="button3" onclick="black()">Black</button>
+<button type="button" id="button4" onclick="green()">Green</button>
+<button type="button" id="button5" onclick="white()">White</button>
+<button type="button" id="button6" onclick="reset()">Default</button>
+</div>
+<div id="content">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Magic_Players.jpg" id="people" alt="a group of magic players" style="width:300px;height:200px;">
+<h1 id="top">Basic Info</h1>
+<p>First published in 1993 by Wizards of the Coast, Magic was the first trading card game produced and it continues to thrive, with approximately twenty million players as of 2015. Magic can be played by two or more players in various formats, the most common of which uses a deck of 60+ cards, either in person with printed cards or through the Internet-based Magic: The Gathering Online, on a smartphone or tablet, or other programs, using a deck of virtual cards.</p>
+<p>Each game represents a battle between wizards known as "planeswalkers", who employ spells, artifacts, and creatures depicted on individual Magic cards to defeat their opponents. Although the original concept of the game drew heavily from the motifs of traditional fantasy role-playing games such as Dungeons & Dragons, the gameplay of Magic bears little similarity to pencil-and-paper adventure games, while having substantially more cards and more complex rules than many other card games.</p>
+<p>An organized tournament system and a community of professional Magic players has developed, as has a secondary market for Magic cards. Magic cards can be valuable due to their rarity and utility in gameplay. Often the prices of a single card can be anywhere from a few cents to a few hundred dollars, and in some instances thousands of dollars.</p>
+<p> The most common tournament formats are Standard, Modern, and Legacy.
+  <h1>Gameplay</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Magic_the_gathering_pentagon.png/220px-Magic_the_gathering_pentagon.png" id="magiccolor" alt="the colours of magic" style="width:300px;height:200px;">
+<p>In a game of Magic, two or more players are engaged in a battle as powerful wizards called "planeswalkers". A player starts the game with twenty "life points" and loses when he or she is reduced to zero. Players lose life when they are dealt "damage" by being attacked with summoned creatures or when spells or other cards cause them to lose life directly. A player can also lose if he or she must draw from an empty deck (called the "library" during the game). In addition, some cards specify other ways to win or lose the game.</p>
+<p>Some cards have effects that override normal game rules. Garfield has stated that two major influences in his creation of Magic: the Gathering were the games Cosmic Encounter, which first used the concept that normal rules could sometimes be overridden, and Dungeons & Dragons. The "Golden Rules of Magic" state that "Whenever a card's text directly contradicts the rules, the card takes precedence." This allows Wizards of the Coast great flexibility in creating cards, but can cause problems when attempting to reconcile a card with the rules (or two cards with each other). The Comprehensive Rules, a detailed rulebook, exists to clarify these conflicts.</p>
+<p>Players begin the game by shuffling their decks and then drawing seven cards. Players draw one card at the beginning of each of their turns, except the first player on their first turn. Players alternate turns consisting of several phases. Most cards can only be played during the main phase of the player's own turn. The player whose turn it is always has the first chance to play cards. At the end of a player's turn, if that player has more than seven cards in hand, the player discards until their hand contains seven cards. The contents of other players' decks and hands are not usually known to players.</p>
+<p>The two basic kinds of cards in Magic are "spells" and "lands". Lands provide "mana", or magical energy, which is used as magical fuel when the player attempts to cast spells. Players may only play one land per turn. More powerful spells cost more mana, so as the game progresses more mana becomes available, and the quantity and relative power of the spells played tends to increase. Some spells also require the payment of additional resources, such as cards in play or life points. Spells come in several varieties: "sorceries" and "instants" have a single, one-time effect before they go to the "graveyard" (discard pile); "enchantments" and "artifacts" are "permanents" that remain in play after being cast to provide a lasting magical effect; "creature" spells (also a type of permanent) summon creatures that can attack and damage an opponent. The set Lorwyn introduced the new "planeswalker" card type, which represent powerful allies who fight with their own magic abilities depending on their loyalty to the player who summoned them. Spells can be of more than one type.</p>
+<p>Most spells come in one of five colors. The colors can be seen on the back of the cards, in a pentagonal design, called the "Color Wheel" or "Color Pie". Clockwise from the top, they are: white, blue, black, red, and green, respectively abbreviated WUBRG (often pronounced "woo-berg" by players and designers). ("U" for "blue" comes from the fact that the mana symbols were typeset by their initials, and "B" was used for black. These same letter codes were used when Wizards released official card lists.) To play a spell of a given color, at least one mana of that color is required. This mana is normally generated by a basic land: plains for white, island for blue, swamp for black, mountain for red, and forest for green. The balances and distinctions among the five colors form one of the defining aspects of the game. Each color has strengths and weaknesses based on the "style" of magic it represents.</p>
+<p> There are also multi-coloured spells and colorless spells. Multi-colored spells require two or more different colourd mana to be played. Colorless spells, as the name implies, does not require any specific color to cast, rather just a set number of mana.</p>
+  <h1>Constructed</h1>
+<p>In "Constructed" tournaments, each player arrives with a pre-built deck, which must have a minimum of sixty cards and follow other deck construction rules. The deck may also have up to a fifteen card sideboard, which allows players to modify their deck: following the first game of each match, each player is permitted to replace any number of cards in his or her deck with any number of cards from his or her sideboard. The original deck configuration is restored before the start of the next match. Normally the first player to win two games is the winner of the match.</p>
+<p><strong>Standard</strong> formerly known as Type 2, contains the current block, the last completed block, and the most recent core set (except in the intervening months between the core set release in summer and rotation in October, wherein the most recent core set and previous core set are both Standard legal). The Standard card pool undergoes a "rotation" each year in October, when the first set of the next block is released. As of October 2, 2015, the Standard card pool consists of the Khans of Tarkir block, Magic Origins, and Battle for Zendikar.</p>
+<p><strong>Modern</strong> is a format that was first played at the Magic Online 2011 Community Cup, a response to players' desire for a non-rotating format that is more accessible to newer players. This format was originally championed by Gavin Verhey and the “Overextended” community, with Wizards of the Coast inducting Modern as a legal format on August 12, 2011, and saw its first paper magic play at Pro Tour Philadelphia 2011.[73] Modern consists of every block and core set using the modern card frame since the release of 8th Edition to the present, including Coldsnap and Timeshifted cards from Time Spiral. Cards that were not printed in one of these sets, such as Planechase or Commander series cards, are not legal in Modern, even if they have the modern card frame.</p>
+<p><strong>Legacy</strong> is considered an "Eternal" format because the card pool never rotates. This means that all the sets that are currently legal will continue to be legal and any new tournament-legal cards will automatically be included in the legal card pool upon their release.</p>
+</div>
+<div id="bottom">
+<a href="home.html#header">Go to Top</a>
+<p id="copyright">© 2015 Sydnee Warnock All Rights Reserved.</p>
+</div>
+</body>
+</html>

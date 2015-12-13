@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Magic for Beginners</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="exam.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="exam.js"></script>
+</head>
+<body onload="startTime()">
+<!-- Thanks to W3School, Webmasterworlds, Wikipedia, MTG Salvation,WOTC, Channel Fireball-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="home.html">Magic for Beginners</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Standard <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="standard.html">Info</a></li>
+            <li><a href="standard.html#tier1">Tier 1</a></li>
+            <li><a href="standard.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Modern <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="modern.html">Info</a></li>
+            <li><a href="modern.html#tier1">Tier 1</a></li>
+            <li><a href="modern.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Legacy <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="legacy.html">Info</a></li>
+            <li><a href="legacy.html#tier1">Tier 1</a></li>
+            <li><a href="legacy.html#tier2">Tier 2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="header">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Magic_the_gathering-card_back.jpg" alt="picture of a magic card" style="width:128px;height:128px;">
+<h1 id="title">Magic for Beginners</h1>
+<p id="phrase">Information for the new MTG Player. Learn about the formats and the decks for each them.</p>
+<div id="date"></div>
+<button type="button" id="button1" onclick="red()">Red</button>
+<button type="button" id="button2" onclick="blue()">Blue</button>
+<button type="button" id="button3" onclick="black()">Black</button>
+<button type="button" id="button4" onclick="green()">Green</button>
+<button type="button" id="button5" onclick="white()">White</button>
+<button type="button" id="button6" onclick="reset()">Default</button>
+</div>
+<div id="content">
+  <h1 id="info">Standard</h1>
+  The Standard format uses the most recently released Magic sets. The following card sets are currently permitted in the Standard format:
+<ul>
+  <li>Battle for Zendikar</li>
+  <li>Magic Origins</li>
+  <li>Dragons of Tarkir</li>
+  <li>Fate Reforged</li>
+  <li>Khans of Tarkir</li>
+</ul>
+Standard is also a constructed deck format, so the normal constructed rules apply:
+<ul>
+  <li>Minimum of sixty cards</li>
+  <li>No maximum deck size, as long as you can shuffle your deck unassisted</li>
+  <li>Up to fifteen cards in your sideboard, if used</li>
+  <li>No more than four of any individual card in your main deck and sideboard combined (with the exception of basic lands)</li>
+</ul>
+<h1 id="tier1">Tier 1</h1>
+<p>The best of the best, these are the decks with some of the best tournament postings in recent months.</p>
+<a href="#jeskai" class="btn btn-info" data-toggle="collapse">Dark Jeskai</a><br />
+<br />
+  <div id="jeskai" class="collapse">
+    <h3>Info</h3>
+      <p>If you want to play the best cards available in Standard, go no farther. Great creatures and great spells equals a great deck</p>
+    <h3>Signature Cards</h3>
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/76/876/200/283/398434.full.jpg" alt="Jace, Vryn's Prodigy" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/23/200/283/386507.full.jpg" alt="Crackling Doom" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/66/690/200/283/391937.full.jpg" alt="Tasigur, the Golden Fang" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/34/200/283/386518.full.jpg" alt="Dig Through Time" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/603/200/283/401860.full.jpg" alt="Dragonmaster Outcast" style="width:200px;height:250px;">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Can take over a gmae quite quickly due to the card draw and removal</li>
+    </ul>
+    <h3>Weaknesses</h3>
+      <ul>
+    <li>Very expensive to build</li>
+     <li>It's only weakness is against itself, which is important to know as this is one of the most popular decks.</li>
+   </ul>
+  </div>
+  <a href="#red" class="btn btn-info" data-toggle="collapse">Atarka Red</a><br />
+  <br />
+    <div id="red" class="collapse">
+      <h3>Info</h3>
+        <p>A mono-red aggro deck with a hint of combo. With its ability to overwhelm a game fast and win out of nowhere this a good deck for beginners.</p>
+      <h3>Signature Cards</h3>
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/118/200/283/386608.full.jpg" alt="Monastery Swiftspear" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/298/200/283/394502.full.jpg" alt="Atarka's Command" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/3/200/283/386487.full.jpg" alt="Become Immense" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/66/693/200/283/391940.full.jpg" alt="Temur Battlerage" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/76/756/200/283/398411.full.jpg" alt="Abbot of Keral Keep" style="width:200px;height:250px;">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Cheap creatures can overwhelm your opponent quickly.</li>
+        <li>Easy to learn.</li>
+         <li>Cheapest Tier 1 deck.</li>
+      </ul>
+      <h3>Weaknesses</h3>
+      <ul>
+      <li>If your creatures can't stay on board, you have a very difficult time ahead of you.</li>
+       <li>People come prepared for this match-up due to how common it is.</li>
+     </ul>
+    </div>
+<a href="#abzan" class="btn btn-info" data-toggle="collapse">Abzan</a><br />
+<br />
+  <div id="abzan" class="collapse">
+    <h3>Info</h3>
+      <p>A very resilient three-coloured deck that time and again, wins tournaments it shouldn't. </p>
+    <h3>Signature Cards</h3>
+      <img src="http://media-dominaria.cursecdn.com/avatars/62/99/635457748878253707.jpeg" alt="Siege Rhino" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/62/992/200/283/386476.full.jpg" alt="Anafenza, the Foremost" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/66/707/200/283/391954.full.jpg" alt="Warden of the First Tree" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/631/200/283/401897.full.jpg" alt="Gideon, Ally of Zendikar" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/354/200/283/394558.full.jpg" alt="Drmoka's Command" style="width:200px;height:250px;">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Has little, to no, bad match-ups.</li>
+        <li>The longer a game goes the more likely you are to win.</li>
+      </ul>
+    <h3>Weaknesses</h3>
+    <ul>
+    <li>A bit pricy.</li>
+     <li>More skill intensive.</li>
+   </ul>
+  </div>
+<h1 id="tier2">Tier 2</h1>
+<p>Might not be the best, but they do give Tier 1 a run for their money. These decks have good results and have good game against most of the Tier 1 decks.</p>
+<a href="#ramp" class="btn btn-info" data-toggle="collapse">Eldrazi Ramp</a><br />
+<br />
+  <div id="ramp" class="collapse">
+    <h3>Info</h3>
+      <p>If you like to play big creatures, then go no farther, this is the deck for you.</p>
+    <h3>Signature Cards</h3>
+      <img src="http://i.imgur.com/WfZoZ6J.png" alt="Ulamog, the Ceasless Hunger" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/66/701/200/283/391948.full.jpg" alt="Ugin, the Spirit Dragon" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/365/200/283/394569.full.jpg" alt="Explosive Vegetation" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/644/200/283/401910.full.jpg" alt="Hedron Archive" style="width:200px;height:250px;">
+      <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/341/200/283/394546.full.jpg" alt="Dragonlord Atarka" style="width:200px;height:250px;">
+    <h3>Strengths</h3>
+    <ul>
+      <li>Has one of the best late-game in Standard.</li>
+      <li>Simple.</li>
+    </ul>
+    <h3>Weaknesses</h3>
+     <ul>
+    <li>Hard to beat aggro and other ramp decks.</li>
+  </ul>
+  </div>
+  <a href="#esper" class="btn btn-info" data-toggle="collapse">Esper Dragons</a><br />
+  <br />
+    <div id="esper" class="collapse">
+      <h3>Info</h3>
+        <p>A Control deck geared towards aggressively controlling the game into a state where it can resolve a Dragonlord Ojutai to attempt to soft lock the opponent out of the game for the 4 turns in which the deck attacks with Dragonlord Ojutai. </p>
+      <h3>Signature Cards</h3>
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/344/200/283/394549.full.jpg" alt="Dragonlord Ojutai" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/494/200/283/394706.full.jpg" alt="Silumgar's Scorn" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/63/34/200/283/386518.full.jpg" alt="Dig Through Time" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/76/876/200/283/398434.full.jpg" alt="Jace, Vryn's Prodigy" style="width:200px;height:250px;">
+        <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/432/200/283/394642.full.jpg" alt="Ojutai's Command" style="width:200px;height:250px;">
+      <h3>Strengths</h3>
+      <ul>
+        <li>Can beat any deck with a nut-draw.</li>
+        <li> Powerful creatures that are hard to get rid of.</li>
+        <li> Can win fast once its gets going</li>
+      </ul>
+      <h3>Weaknesses</h3>
+      <ul>
+      <li>Very expensive.</li>
+    <li>Most challenging deck to pilot.</li>
+    <li>Questionable match-ups against aggro.</li>
+  </ul>
+    </div>
+    <a href="#rally" class="btn btn-info" data-toggle="collapse">4-Color Rally</a><br />
+    <br />
+      <div id="rally" class="collapse">
+        <h3>Info</h3>
+          <p>A graveyard based combo deck that wants to blow out opponents in one decisive turn.</p>
+        <h3>Signature Cards</h3>
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/66/655/200/283/391901.full.jpg" alt="Rally the Ancestors" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/799/200/283/402101.full.jpg" alt="Zulaport Cutthroat" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/76/911/200/283/398440.full.jpg" alt="Nantuko Husk" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/79/582/200/283/401839.full.jpg" alt="Catacomb Sifter" style="width:200px;height:250px;">
+          <img src="http://media-dominaria.cursecdn.com/avatars/thumbnails/69/315/200/283/394519.full.jpg" alt="Collected Company" style="width:200px;height:250px;">
+  <h3>Strengths</h3>
+        <ul>
+          <li>Can win out of nowhere.</li>
+          <li>Hard to sideboard against.</li>
+        </ul>
+  <h3>Weaknesses</h3>
+    <ul>
+      <li>Skill intensive.</li>
+      <li>Usually needs Rally the Ancestors to win.</li>
+      <li> One card, Anafenza, the Foremost, shuts the deck down.</li>
+      <li>Slow.</li>
+    </ul>
+      </div>
+</div>
+<div id="bottom">
+<a href="standard.html#header">Go to Top</a>
+<p id="copyright">© 2015 Sydnee Warnock All Rights Reserved.</p>
+</div>
+</body>
+</html>

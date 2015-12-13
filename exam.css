@@ -1,0 +1,100 @@
+body{
+	color:black;
+	background-color:#025da3;
+}
+
+#header{
+	width: 100%;
+	color: white;
+	margin:0 auto;
+	background-color: black;
+}
+
+#title{
+	position: absolute;
+	left: 135px;
+	top:55px;
+}
+
+#phrase{
+	position: absolute;
+	left: 135px;
+	top: 115px;
+}
+
+#content{
+	width:1500px;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	bottom: 200px;
+	margin:0 auto;
+	background-color:white;
+}
+
+#people{
+	float: right;
+}
+
+#magiccolor{
+	float: right;
+}
+
+#bottom{
+	width: 100%;
+	color: white;
+	margin:0px;
+	background-color: black;
+}
+
+#copyright{
+	text-align: center;
+	position: relative;
+	left:75px;
+	bottom: 20px;
+}
+
+#date{
+	color: white;
+	position: absolute;
+	top:175px;
+	left:135px;
+}
+
+#button1{
+	color: black;
+	position: absolute;
+	right:500px;
+	top:170px;
+}
+#button2{
+	color: black;
+	position: absolute;
+	right:448px;
+	top:170px;
+}
+#button3{
+	color:black;
+	position: absolute;
+	right:390px;
+	top:170px;
+}
+#button4{
+	color: black;
+	position: absolute;
+	right:325px;
+	top:170px;
+}
+#button5{
+	color: black;
+	position: absolute;
+	right:265px;
+	top:170px;
+}
+
+#button6{
+	color:black;
+	position: absolute;
+	right:195px;
+	top:170px;
+}
